@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Express Power Washing</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: url('power-washing-hero.jpg') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; }
+    header h1 { font-size: 3em; margin-bottom: 0.5em; }
+    header p { font-size: 1.2em; }
+    nav { background: #333; color: white; padding: 10px 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .services, .gallery, .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .service, .testimonial { background: #f5f5f5; padding: 20px; border-radius: 8px; }
+    .cta { background: #007BFF; color: white; text-align: center; padding: 40px 20px; }
+    .cta h2 { margin-bottom: 20px; }
+    .contact-form input, .contact-form textarea, .contact-form select { width: 100%; padding: 10px; margin: 10px 0; }
+    footer { background: #222; color: #ccc; text-align: center; padding: 20px; }
+    footer a { color: #ccc; margin: 0 10px; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Express Power Washing</h1>
+    <p>Restore the Look of Your Property – Fast, Affordable, Professional</p>
+    <button onclick="window.location='#contact'">Get a Free Quote</button>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>Why Choose Express Power Washing?</h2>
+    <p>We provide top-notch residential and commercial power washing services with eco-friendly cleaning methods and a satisfaction guarantee. Fully licensed and insured.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">Residential Power Washing</div>
+      <div class="service">Commercial Power Washing</div>
+      <div class="service">Driveways & Sidewalks</div>
+      <div class="service">Deck & Fence Cleaning</div>
+      <div class="service">Roof & Gutter Cleaning</div>
+      <div class="service">Graffiti Removal</div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>See the Difference</h2>
+    <div class="gallery">
+      <img src="before1.jpg" alt="Before" style="width:100%">
+      <img src="after1.jpg" alt="After" style="width:100%">
+      <img src="before2.jpg" alt="Before" style="width:100%">
+      <img src="after2.jpg" alt="After" style="width:100%">
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">"They made my driveway look brand new! Highly recommend." - Sarah R.</div>
+      <div class="testimonial">"Professional and fast service. Great results!" - Mark W.</div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Make Your Property Shine?</h2>
+    <button onclick="window.location='#contact'">Request Your Free Estimate</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Phone Number">
+      <select>
+        <option>Choose a Service</option>
+        <option>Residential Power Washing</option>
+        <option>Commercial Power Washing</option>
+        <option>Deck & Fence Cleaning</option>
+        <option>Graffiti Removal</option>
+      </select>
+      <textarea rows="5" placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Express Power Washing. All rights reserved.</p>
+    <div>
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Yelp</a>
+    </div>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
